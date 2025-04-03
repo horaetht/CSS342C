@@ -31,14 +31,14 @@ Fraction reduce(Fraction input) {
     return Fraction(input.numerator / divisor, input.denominator / divisor);
 }
 
-int main() {
-    Fraction num1(2, 4);
-    cout << reduce(num1).to_string() << endl;
+// int main() {
+//     Fraction num1(2, 4);
+//     cout << reduce(num1).to_string() << endl;
 
-    test(); 
-}
+//     test(); 
+// }
 
-void test() {
+void testReduceFraction() {
     Fraction input(2, 4);
     Fraction expected_output(1, 2);
     Fraction actual_output = reduce(input);
